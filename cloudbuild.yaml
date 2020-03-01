@@ -33,7 +33,7 @@ steps:
       - image
       - deployment/dev-hello-go-deployment
       - dev-hello-go-deployment=gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA
-      - namespcae=local-hello-go
+      - namespace=local-hello-go
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=$_CLUSTER_ZONE'
       - 'CLOUDSDK_CONTAINER_CLUSTER=$_CLUSTER_NAME'
