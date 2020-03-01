@@ -31,6 +31,7 @@ steps:
     args:
       - set
       - image
+      - namespcae=local-hello-go
       - deployment/dev-hello-go-deployment
       - dev-hello-go-deployment=gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA
     env:
