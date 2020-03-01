@@ -31,7 +31,7 @@ steps:
     args:
       - set
       - image
-      - namespace=local-hello-go
+      - --namespace=local-hello-go
       - deployment/dev-hello-go-deployment
       - dev-hello-go=gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA
     env:
