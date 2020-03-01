@@ -13,4 +13,8 @@ steps:
     args: 
       - "push"
       - "gcr.io/$PROJECT_ID/$REPO_NAME:$SHORT_SHA"
+  # push container image 
+  - name: "gcr.io/cloud-builders/docker"
+    args: 
+      - "push"
       - "gcr.io/$PROJECT_ID/$REPO_NAME:develop-latest"
